@@ -17,7 +17,7 @@ public class MissingNumber
 	         for(int j=0;j<arrayLength-1;j++){
 	            arraySum += sc.nextInt();     
 	         }
-	         int expectedSum= arrayLength*(arrayLength+1)/2;
+	         int expectedSum= arrayLength*(arrayLength+1)/2; // 1+2+3+4+......+n = n(n+1)/2
 	         solution[i]=expectedSum-arraySum;
 	    }
 	    
