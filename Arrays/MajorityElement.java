@@ -42,15 +42,15 @@ class GFG
 	 }
 	 
 	 //Boyer-moore voting algorithm
- 	 private static int findMajority(int[] arr){
- 	    int count = 0;
-        Integer candidate = null;
+        private static int findMajority(int[] arr){
+ 		int count = 0;
+       		Integer candidate = null;
 
-        for (int num : arr) {
-            if (count == 0) {
-                candidate = num;
-            }
-            count += (num == candidate) ? 1 : -1;
+        	for (int num : arr) {
+            		if (count == 0) {
+                	candidate = num;
+            	}
+            	count += (num == candidate) ? 1 : -1;
         }
 
         return candidate;
